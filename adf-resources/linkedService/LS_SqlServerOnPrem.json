@@ -1,0 +1,24 @@
+{
+	"name": "LS_SqlServerOnPrem",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "SAGC5W5S72\\SQLEXPRESS",
+			"database": "school",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "SAGC5W5S72\\manojbora5",
+			"alwaysEncryptedSettings": {
+				"alwaysEncryptedAkvAuthType": "ManagedIdentity"
+			},
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjMjg1NGFmMS1kOGZjLTQ0MGMtYmU5NS0zNmRjZDRlZTgwMGMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "OnPremiseintegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

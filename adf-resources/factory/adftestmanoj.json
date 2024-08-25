@@ -1,0 +1,9 @@
+{
+	"name": "adftestmanoj",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7cfc1558-717a-47cc-af6a-2fe6f3bf1785",
+		"tenantId": "922c2739-12f4-43ad-8168-20ef2b8835ce"
+	}
+}
