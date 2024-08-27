@@ -47,13 +47,41 @@
 							"inputs": [
 								{
 									"referenceName": "DS_inputsourceBinary1",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"ContainerName": {
+											"value": "@item().input",
+											"type": "Expression"
+										},
+										"DirectoryName": {
+											"value": "@item().inputfolder",
+											"type": "Expression"
+										},
+										"FileName": {
+											"value": "@item().InputStudentDetails.txt",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
 								{
 									"referenceName": "DS_outputsinkBinary1",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"ContainerName": {
+											"value": "@item().output",
+											"type": "Expression"
+										},
+										"DirectoryName": {
+											"value": "@item().outputfolder",
+											"type": "Expression"
+										},
+										"FileName": {
+											"value": "@item().OutputStudentDetails.txt",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
